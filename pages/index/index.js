@@ -39,7 +39,7 @@ Page({
   },
 
   onLoad: function () {
-    mta.Page.init()
+    // mta.Page.init()
   },
   //专题显示全部
   index1: function () {
