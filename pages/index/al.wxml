@@ -9,6 +9,7 @@
   <view class="aaaa"></view>  
 
   <!--案例资讯-->
+  <navigator url='/pages/index/detail'>
   <view class="alzx">
     <view class="alzx_img">
       <image src="http://www.weilaihexun.com/wxxcx/images/al4.png" style="width:198rpx;height:166rpx;"></image>
@@ -25,6 +26,8 @@
       </view>
     </view>
   </view>
+  </navigator>
+  
 
   <!--横线-->
   <view class="aaaa"></view>
