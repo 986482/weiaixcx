@@ -15,7 +15,8 @@
     "pages/index/jptg",
     "pages/index/zxck",
     "pages/index/dt",
-    "pages/index/qayx"
+    "pages/index/qayx",
+    "pages/information/information"
   ],
   "window":{
     "backgroundTextStyle":"light",

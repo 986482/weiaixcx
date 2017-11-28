@@ -1,0 +1,14 @@
+<!--pages/information/information.wxml-->
+
+<view class='article-wrap'>
+  <view class='article-title'>
+    <text>111</text>
+  </view>
+
+  <text class='article-time'>222</text>
+
+  <view class='article-cont'>
+    <image src='{{imgurl+article.img}}'></image>
+    <text>3333</text>
+  </view>
+</view>

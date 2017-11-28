@@ -33,6 +33,8 @@ App({
     }
   },
   globalData:{
-    userInfo:null
+    userInfo:null,
+    wxUrl: 'https://huahui.qingyy.net/weilaitp/public/wx/',
+    imgUrl: 'https://huahui.qingyy.net/weilaitp/public',
   }
 })
