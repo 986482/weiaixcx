@@ -4,9 +4,9 @@
   <!--图片banner-->
   <view class="img">
     <swiper class="swiper" indicator-dots="true" autoplay="true" interval="5000" duration="1000" circular="true">
-      <block wx:for="{{array}}" wx:for-index="index">
+      <block wx:for="{{ad}}" wx:for-index="index">
         <swiper-item>
-          <image src="{{item.url}}" class="slide-image" mode="aspectFill" />
+          <image src="{{imgurl+item.img}}" class="slide-image" mode="aspectFill" />
         </swiper-item>
       </block>
     </swiper>

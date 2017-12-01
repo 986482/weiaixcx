@@ -1,6 +1,8 @@
 //index.js
 //获取应用实例
 var app = getApp()
+var common = require("../../utils/util.js");
+const imgurl = app.globalData.imgUrl;
 var order = ['img1', 'img2', 'img3', 'img4']
 Page({
 
@@ -10,18 +12,18 @@ Page({
       path: '/page/index/index',
       success: function (res) {
         // 转发成功
-/**        var shareTickes = res.shareTickes;
-        if (shareTickes.length == 0) {
-          return false;
-        }
-        wx.getShareInfo({
-          shareTicket: shareTicket[0],
-          success: function (res) {
-            var encryptedData = res.encryptedData;
-            var iv = res.iv;
-          }
-        })
-**/
+        /**        var shareTickes = res.shareTickes;
+                if (shareTickes.length == 0) {
+                  return false;
+                }
+                wx.getShareInfo({
+                  shareTicket: shareTicket[0],
+                  success: function (res) {
+                    var encryptedData = res.encryptedData;
+                    var iv = res.iv;
+                  }
+                })
+        **/
       },
       fail: function (res) {
         // 转发失败
@@ -30,16 +32,29 @@ Page({
   },
 
   data: {
-    array: [
-      { url: 'http://www.weilaihexun.com/wxxcx/images/sy_b3.jpg' },
-      { url: 'http://www.weilaihexun.com/wxxcx/images/sy_b2.jpg' },
-      { url: 'http://www.weilaihexun.com/wxxcx/images/sy_b4.jpg' },
-      { url: 'http://www.weilaihexun.com/wxxcx/images/sy_b5.jpg' }
-    ],
+    // array: [
+    //   { url: 'http://www.weilaihexun.com/wxxcx/images/sy_b3.jpg' },
+    //   { url: 'http://www.weilaihexun.com/wxxcx/images/sy_b2.jpg' },
+    //   { url: 'http://www.weilaihexun.com/wxxcx/images/sy_b4.jpg' },
+    //   { url: 'http://www.weilaihexun.com/wxxcx/images/sy_b5.jpg' }
+    // ],
+    imgurl: imgurl,
+    ad:[]
   },
 
   onLoad: function () {
+    var that = this;
+    that.getAd();
     // mta.Page.init()
+  },
+  //banner接口
+  getAd: function () {
+    var that = this
+    common.httpG('ad/index', {}, function (data) {
+      that.setData({
+        ad: data.data
+      })
+    })
   },
   //专题显示全部
   index1: function () {
