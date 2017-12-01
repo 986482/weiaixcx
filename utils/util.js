@@ -45,13 +45,14 @@ function httpG(url, data, callback) {
     data: data,
     success: function (res) {
       callback(res.data);
-    },
+    },  
     fail: function (res) {
+      console.log(wxurl+url)
       console.log('request-get error:', res);
     },
     complete: function (res) {
       wx.hideLoading();
-      // console.log("get-complete:", res.data)
+      console.log("get-complete:", res.data)
       if (res.data.code && res.data.code != 0 && res.data.msg) {
         wx.showToast({
           title: res.data.msg,

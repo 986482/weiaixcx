@@ -12,7 +12,7 @@ App({
   },
   globalData:{
     userInfo:null,
-    wxUrl: 'https://huahui.qingyy.net/weilaitp/public/wx/',
-    imgUrl: 'https://huahui.qingyy.net/weilaitp/public',
+    wxUrl: 'https://huahui.qingyy.net/weilaihexun_wxapi_tp5/public/wx.php/',
+    imgUrl: 'http://www.weilaihexun.com/',
   }
 })

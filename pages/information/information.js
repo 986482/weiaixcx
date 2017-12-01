@@ -1,6 +1,7 @@
 // pages/article/article.js
 var common = require("../../utils/util.js");
 var app = getApp();
+var WxParse = require('../../wxParse/wxParse.js');
 
 const imgurl = app.globalData.imgUrl;
 
@@ -12,20 +13,25 @@ Page({
   data: {
     imgurl: imgurl,
     article: [],
-
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    var a_id = options.a_id;
-    this.getArticle(a_id);
-  },
-  getArticle: function (a_id) {
     var that = this
-    common.httpG('group/get_article', { a_id: a_id }, function (data) {
-      that.setData({ article: data.data })
+    var id = options.id;
+    // WxParse.wxParse('aaa', 'html', aaa, that, 5)
+    that.getArticle(id);
+    
+  },
+  getArticle: function (id) {
+    var that = this
+    common.httpG('article/getInfo', { id: id }, function (data) {
+      that.setData({
+        article:data.data,
+        cont : WxParse.wxParse('cont', 'html', data.data.cont, that, 5)
+      })
     })
   },
 
