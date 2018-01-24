@@ -32,20 +32,32 @@ Page({
   },
 
   data: {
-    // array: [
-    //   { url: 'http://www.weilaihexun.com/wxxcx/images/sy_b3.jpg' },
-    //   { url: 'http://www.weilaihexun.com/wxxcx/images/sy_b2.jpg' },
-    //   { url: 'http://www.weilaihexun.com/wxxcx/images/sy_b4.jpg' },
-    //   { url: 'http://www.weilaihexun.com/wxxcx/images/sy_b5.jpg' }
-    // ],
+   
     imgurl: imgurl,
-    ad:[]
+    ad:[],
+	newsRecent:[],
+	vertical : true,
+	autoplay: true,
+	circular: true
   },
 
   onLoad: function () {
     var that = this;
     that.getAd();
+	this.getNews();
     // mta.Page.init()
+  },
+  //取最近新闻2个
+  getNews:function(){
+	  var that = this
+	  common.httpG('article/recent', {}, function (data) {
+		  if(data.code==0){
+			  that.setData({
+				  newsRecent: data.data
+			  })
+		  }
+	
+	  })
   },
   //banner接口
   getAd: function () {

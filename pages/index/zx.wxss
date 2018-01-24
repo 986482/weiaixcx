@@ -21,12 +21,11 @@
 }
 .hourtcts{
   font-size: 34rpx;
-  margin-top: 60rpx;
   color: #333;
 }
 .hourtctx{
   font-size: 24rpx;
-  margin-top: 30rpx;
+  margin-top: 15rpx;
   margin-right: 30rpx;
   color: #333;
   line-height: 35rpx;
@@ -35,6 +34,8 @@
   float: right;
   color: #0c98d2;
   font-size: 24rpx;
+  margin-right: 10rpx;
+  margin-top: 10rpx;
 }
 /**横线**/
 .aaaa{

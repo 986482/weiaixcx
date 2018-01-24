@@ -1,5 +1,8 @@
 /**index.wxss**/
 /**文字**/
+page {
+	overflow: scroll;
+}
 .yfw_txt{
   text-align: center;
   font-size: 34rpx;

@@ -47,7 +47,6 @@ function httpG(url, data, callback) {
       callback(res.data);
     },  
     fail: function (res) {
-      console.log(wxurl+url)
       console.log('request-get error:', res);
     },
     complete: function (res) {

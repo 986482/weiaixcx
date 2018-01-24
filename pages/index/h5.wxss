@@ -20,7 +20,7 @@
 /**图文**/
 .h5_new {
   background: #fff;
-  height: 615rpx;
+  /* height: 615rpx; */
   width: 750rpx;
   margin-bottom: 80rpx;
 }
@@ -46,7 +46,7 @@
 }
 .new3{
   margin-top: 30rpx;
-  height: 204rpx;
+
 }
 /**文字**/
 .h5_txtt{

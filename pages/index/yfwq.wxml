@@ -33,8 +33,7 @@
     <text>概念图</text>
   </view>
 
-  <view class="yfw_img4">
-    <image src="http://www.weilaihexun.com/wxxcx/images/yfw_img2.png" style="width:691rpx;height:569rpx;"></image>
-  </view>
+    <image src="http://www.weilaihexun.com/wxxcx/images/yfw_img2.png" style="width:691rpx;height:569rpx;margin-left: 30rpx"></image>
+
 
 </view> 

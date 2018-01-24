@@ -15,7 +15,8 @@
     "pages/index/zxck",
     "pages/index/dt",
     "pages/index/qayx",
-    "pages/information/information"
+    "pages/information/information",
+	"pages/anli_detail/anli_detail"
   ],
   "window": {
     "backgroundTextStyle": "light",

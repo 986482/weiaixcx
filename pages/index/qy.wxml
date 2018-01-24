@@ -105,9 +105,9 @@
       <text class="text1">邮编：100101</text>
     </view>  
   </view>
-
+<!-- 
   <view class="footer">
     <image src="http://www.weilaihexun.com/wxxcx/images/qy_addadd.png" style="width:689rpx;height:502rpx;"></image>
-  </view>
+  </view> -->
 
 </view> 

@@ -70,8 +70,11 @@
   margin-left: 30rpx;
   margin-right: 30rpx;
 }
+.alzx_img image {
+	 margin-top: 20rpx; 
+}
 .alzx_txt1{
-  margin-top: 30rpx;
+  margin-top: 6rpx;
 }
 .txt1{
   font-size: 24rpx;

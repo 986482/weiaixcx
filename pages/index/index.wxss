@@ -34,11 +34,13 @@
 
 .m_img1 {
   width: 118rpx;
-  height: 118rpx;
+  /* height: 118rpx; */
   margin: 35rpx;
   border-radius: 50%;
 }
-
+.m_img1 image {
+	border-radius: 50%;
+}
 .m_text1 {
   font-size: 30rpx;
   color: #aaa;
@@ -49,33 +51,30 @@
 
 .d {
   margin-top: 2rpx;
-  height: 168rpx;
+  height: 65rpx;
   width: 750rpx;
   background: #fff;
 }
 
 .dt {
-  line-height: 35rpx;
+  display: flex;
+  align-items: center;
+  height: 65rpx;
 }
-
 .dt_img {
-  margin-left: 25rpx;
-  margin-top: 35rpx;
+	width: 16px;
+	height: 16px;
 }
-
 .dt_text {
   font-size: 30rpx;
-  text-align: center;
   color: #a8a8a8;
   margin-left: 10rpx;
+  flex: 1;
 }
 
 .dt_text1 {
   font-size: 30rpx;
   color: #a8a8a8;
-  float: right;
-  margin-right: 15rpx;
-  margin-top: 35rpx;
 }
 
 /**云服务**/
@@ -94,7 +93,7 @@
 
 /**云服务**/
 .yfw{
-  height: 360rpx;
+  /* height: 360rpx; */
 }
 .yfwleft {
   float: left;
@@ -193,6 +192,7 @@
   background: #fefffa;
   margin: 45rpx;
   font-family: "微软雅黑";
+  color: #666;
 }
 
 .ggtext {
@@ -205,6 +205,6 @@
 .gggtext {
   background: #fefffa;
   width: 750rpx;
-  height: 585rpx;
+  /* height: 585rpx; */
   color: #333;
 }

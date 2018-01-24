@@ -2,7 +2,7 @@
 <view class="page"> 
 
   <view class="zj">
-    <image src="http://www.weilaihexun.com/wxxcx/images/zj.png" style="width:750rpx;height:300rpx;"></image>
+    <image src="http://www.weilaihexun.com/wxxcx/images/zj.jpg" style="width:750rpx;height:300rpx;"></image>
   </view>
 
   <view class="zj_txt">

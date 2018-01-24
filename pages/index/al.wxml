@@ -9,67 +9,26 @@
   <view class="aaaa"></view>  
 
   <!--案例资讯-->
-  <navigator url='/pages/index/detail'>
+
+<block wx:for="{{list_}}" wx:key='id' wx:for-item='anli'>
+  <navigator url='/pages/anli_detail/anli_detail?anli_id={{anli.id}}'>
   <view class="alzx">
     <view class="alzx_img">
-      <image src="http://www.weilaihexun.com/wxxcx/images/al4.png" style="width:198rpx;height:166rpx;"></image>
+      <image src="{{imgurl+anli.img}}" style="width:198rpx;height:166rpx;"></image>
     </view>
     <view class="alzx_txt">
       <view class="alzx_txt1">
-        <text class="txt1">名称：</text><text class="txt2">物资市场网推广优化历程</text>
+        <text class="txt1">名称：</text><text class="txt2">{{anli.name}}</text>
       </view>
       <view class="alzx_txt3">
-        <text class="txt1">类型：</text><text class="txt1">营销专家</text>
+        <text class="txt1">类型：</text><text class="txt1">{{anli.cate_name}}</text>
       </view>
       <view class="alzx_txt3">
-        <text class="txt1">功能：</text><text class="txt1">申请会员、分销订单、财务管理、积分明细</text>
+        <text class="txt1">功能：</text><text class="txt1">{{anli.funcs}}</text>
       </view>
     </view>
   </view>
   </navigator>
-  
-
-  <!--横线-->
-  <view class="aaaa"></view>
-
-  <view class="alzx">
-    <view class="alzx_img">
-      <image src="http://www.weilaihexun.com/wxxcx/images/al2.png" style="width:198rpx;height:166rpx;"></image>
-    </view>
-    <view class="alzx_txt">
-      <view class="alzx_txt1">
-        <text class="txt1">名称：</text><text class="txt2">物资市场网推广优化历程</text>
-      </view>
-      <view class="alzx_txt3">
-        <text class="txt1">类型：</text><text class="txt1">营销专家</text>
-      </view>
-      <view class="alzx_txt3">
-        <text class="txt1">功能：</text><text class="txt1">申请会员、分销订单、财务管理、积分明细</text>
-      </view>
-    </view>
-  </view>
-
-  <!--横线-->
-  <view class="aaaa"></view>
-
-  <view class="alzx">
-    <view class="alzx_img">
-      <image src="http://www.weilaihexun.com/wxxcx/images/al3.png" style="width:198rpx;height:166rpx;"></image>
-    </view>
-    <view class="alzx_txt">
-      <view class="alzx_txt1">
-        <text class="txt1">名称：</text><text class="txt2">物资市场网推广优化历程</text>
-      </view>
-      <view class="alzx_txt3">
-        <text class="txt1">类型：</text><text class="txt1">营销专家</text>
-      </view>
-      <view class="alzx_txt3">
-        <text class="txt1">功能：</text><text class="txt1">申请会员、分销订单、财务管理、积分明细</text>
-      </view>
-    </view>
-  </view>
-
-  <!--横线-->
-  <view class="aaaa"></view>  
-
+   <view class="aaaa"></view>  
+</block>
 </view> 
